@@ -1,0 +1,110 @@
+.pageWrapper {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f0faff;
+}
+  
+.header {
+    background-color: #0077b6;
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+.centerContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.profileCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: left;
+}
+.profileCard h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 1.5rem;
+}
+.input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.checkboxWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+.saveButton {
+    background-color: #00aaff;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.saveButton:hover {
+    background-color: #008ecc;
+}
+.message {
+    text-align: center;
+    margin-top: 1rem;
+    color: #0077b6;
+    font-weight: 500;
+}
+.backBtnBottom {
+    margin-top: 1.5rem;
+    background-color: #0077b6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.backBtnBottom:hover {
+    background-color: #005f8a;
+}
+@media (max-width: 768px) {
+    .header {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+  
+    .profileCard {
+      padding: 1.5rem;
+    }
+  
+    .saveButton, .backBtnBottom {
+      font-size: 0.95rem;
+    }
+}

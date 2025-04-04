@@ -1,0 +1,133 @@
+.pageWrapper {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f0faff;
+}
+.header {
+    background-color: #0077b6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.backBtn {
+    background-color: white;
+    color: #0077b6;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.backBtn:hover {
+    background-color: #e0f0ff;
+}
+.inviteSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem auto;
+}
+.inviteInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 250px;
+}
+.inviteButton {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.inviteButton:hover {
+    background-color: #008ecc;
+}
+.cardWrapper {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+    margin: 1rem auto;
+}
+.cardWrapper h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 1.5rem;
+}
+.friendCard, .invitationItem {
+    background-color: #f2faff;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.invitationActions button {
+    margin-left: 0.5rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.invitationActions button:first-child {
+    background-color: #4caf50;
+    color: white;
+}
+.invitationActions button:last-child {
+    background-color: #f44336;
+    color: white;
+}
+.message {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #0077b6;
+}
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .inviteInput, .inviteButton {
+      width: 100%;
+    }
+  
+    .invitationActions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+}
+  

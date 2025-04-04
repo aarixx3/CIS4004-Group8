@@ -1,0 +1,103 @@
+.wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.leftPanel {
+    flex: 1;
+    background-color: #d0f4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.rightPanel {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.formContainer {
+    width: 100%;
+    max-width: 420px;
+    background-color: #f9f9f9;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+.formHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.iconBox {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
+}
+.input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #008ecc;
+}
+.toggle {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #0077b6;
+    font-weight: 500;
+    cursor: pointer;
+}
+.message {
+    text-align: center;
+    margin-top: 1rem;
+    color: #e63946;
+    font-size: 0.95rem;
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .leftPanel,
+    .rightPanel {
+      width: 100%;
+      height: auto;
+      padding: 2rem 0;
+    }
+  
+    .formContainer {
+      padding: 2rem 1.5rem;
+      box-shadow: none;
+      border-radius: 0;
+    }
+  
+    .iconBox {
+      width: 80px;
+      height: 80px;
+    }
+}
+  

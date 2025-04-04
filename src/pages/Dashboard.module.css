@@ -1,0 +1,231 @@
+.pageWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0faff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077b6;
+    color: white;
+    padding: 1rem 2rem;
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.navLinks {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.navLinks button {
+    padding: 10px 16px;
+    background-color: #00b4d8;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+.navLinks button:hover {
+    background-color: #0096c7;
+}
+.dashboardWrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.leftPanel {
+    flex: 0 0 300px;
+    background-color: #e0f7fa;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+.input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    max-width: 260px;
+}
+.button {
+    background-color: #00aaff;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 260px;
+}
+.button:hover {
+    background-color: #008ecc;
+}
+.motivationQuote {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #005f73;
+    padding: 0 0.5rem;
+}
+.rightPanel {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 2rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.logList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.logItemCard {
+    background-color: #e3f2fd;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border-left: 4px solid #42a5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    font-size: 0.95rem;
+}
+.calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 12px;
+    margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.calendarCell {
+    padding: 0.8rem;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.calendarCell:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}
+.notificationPopup {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 260px;
+    z-index: 1000;
+}
+.notificationPopup h4 {
+    margin-bottom: 0.5rem;
+    color: #0077b6;
+    font-size: 1.1rem;
+}
+.customAlert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e3f2fd;
+    border-left: 6px solid #0077b6;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    z-index: 1000;
+    min-width: 320px;
+    max-width: 90vw;
+    animation: slideDown 0.3s ease;
+}
+@keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -30px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+}
+.alertContent {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    color: #004d61;
+}
+.alertClose {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+    color: #0077b6;
+}
+.alertClose:hover {
+    color: #004d61;
+}
+@media (max-width: 1024px) {
+    .dashboardWrapper {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .leftPanel,
+    .rightPanel {
+      width: 100%;
+      padding: 1.5rem;
+    }
+  
+    .calendarGrid {
+      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    }
+}
+@media (max-width: 600px) {
+    .navLinks button {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+  
+    .calendarGrid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+}
+  

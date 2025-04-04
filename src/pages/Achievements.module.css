@@ -1,0 +1,94 @@
+.pageWrapper {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0faff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    background-color: #0077b6;
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header h1 {
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.backBtn {
+    background-color: white;
+    color: #0077b6;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    left: 2rem;
+}
+.achievementGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+.card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+    color: #0077b6;
+}
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+.badge {
+    font-size: 2.5rem;
+}
+.shareSection {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.shareButton {
+    background-color: #00aaff;
+    color: white;
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.shareButton:hover {
+    background-color: #008ecc;
+}
+  
