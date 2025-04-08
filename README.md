@@ -88,6 +88,7 @@ Authentication
 Used Supabase Auth (email/password) to manage signups and logins.
 
 Integrated @supabase/supabase-js client SDK on the frontend.
+
 **Steps to Deploy**
 
 1. Clone the Repository
@@ -118,8 +119,6 @@ ChatGPT by OpenAI (GPT-4 Turbo, April 2024 version)
 
 Prompts Used
 "Help write a GitHub README for a hydration tracker app that includes deployment instructions and AI usage citation."
-
-"Generate sample React code for tracking water intake with daily goals."
 
 "How to integrate a reminder system using React and browser notifications."
 
